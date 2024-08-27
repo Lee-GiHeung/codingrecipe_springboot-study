@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>save</title>
+</head>
+<body>
+    <!-- action 속성: 데이터를 어디로 보내겠다. 목적지(서버주소)
+        method 속성: http request method(get, post) -->
+    <form action="/board/save" method="post" enctype="multipart/form-data">
+        writer : <input type="text" name="boardWriter"> <br>
+        pass : <input type="text" name="boardPass"> <br>
+        title : <input type="text" name="boardTitle"> <br>
+        contents : <textarea type="text" name="boardContents" cols="30" rows="10"></textarea> <br>
+        file : <input type="file" name="boardFile" multiple> <br>
+        <input type="submit" value="글작성">
+    </form>
+</body>
+</html>
